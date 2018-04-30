@@ -206,7 +206,7 @@ def generate_header(contents):
     header = contents[0:lines_header]
 
     header_add1 = """##SimpleAnnotation Version="0.0.1"\n"""
-    header_add2 = """##SimpleAnnotation Cmd="python3 SimpleAnnotation.py -input {} -snpeff {}"\n""".format(vcf_file, snpeff_path)
+    header_add2 = """##SimpleAnnotation Cmd="python3 SimpleAnnotation.py -input {} -snpeff {} -genome {} "\n""".format(vcf_file, snpeff_path, ref_genome)
     header_add3 = """##INFO=<ID=ANN,Number=.,Type=String, Description="Simple annotations: 'Alternate allele | Type of variation most deleterious | Sequence depth at the site of variation | Number of reads of reference | Number of reads of alternate | Ratio of read counts of alt vs ref | ExAC variant Allele Frequency | ExAC variant consequence most deleterious' ">\n"""
 
     header.append(header_add1)
