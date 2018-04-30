@@ -205,7 +205,7 @@ def generate_output_vcf(vcf_file, anno_good):
 def generate_header(contents):
     header = contents[0:lines_header]
 
-    header_add1 = """##SimpleAnnotation Version="0.0.1"\n"""
+    header_add1 = """##SimpleAnnotation Version="0.0.1" By Haipeng Liu hliu47@uic.edu \n"""
     header_add2 = """##SimpleAnnotation Cmd="python3 SimpleAnnotation.py -input {} -snpeff {} -genome {} "\n""".format(vcf_file, snpeff_path, ref_genome)
     header_add3 = """##INFO=<ID=ANN,Number=.,Type=String, Description="Simple annotations: 'Alternate allele | Type of variation most deleterious | Sequence depth at the site of variation | Number of reads of reference | Number of reads of alternate | Ratio of read counts of alt vs ref | ExAC variant Allele Frequency | ExAC variant consequence most deleterious' ">\n"""
 
@@ -318,6 +318,7 @@ callset_ratio = get_alt_ref_ratio(callset_dp_ro_ao)
 
 # Generate variant ID for search of ExAC.
 var_all = generate_var_id_for_exac(vcf_file)
+var_all = var_all.iloc[0:100]  # for test
 
 # Search variant allele frequency on ExAC.
 print('Searching ExAC for allele freq.....')
