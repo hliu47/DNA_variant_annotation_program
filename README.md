@@ -42,4 +42,4 @@ This simple variant annotation tool is able to annotate variant with following i
 Please reach out to me ``hliu47@uic.edu`` for bug report.
 
 ## License
-The MIT License
+The MIT License.
