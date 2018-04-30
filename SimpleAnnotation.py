@@ -1,3 +1,10 @@
+######################################
+### Simple variant annotation tool
+###
+### Version 0.0.1
+### By Haipeng Liu 
+### hliu47@uic.edu
+######################################
 import pandas as pd
 import numpy as np
 import allel
