@@ -30,7 +30,7 @@ This simple variant annotation tool is able to annotate variant with following i
 ``$ git clone https://github.com/hliu47/Simple_variant_annotation_program.git``
 
 ## Sample usage
-``$ python3 SimpleAnnotation.py -input ./Challenge_data.vcf -snpeff ./snpEff/snpEff.jar``
+``$ python3 SimpleAnnotation.py -input ./Challenge_data.vcf -snpeff ./snpEff/snpEff.jar -genome GRCh37.75``
 
 ## Output file
 ``simple_annotation.vcf``
