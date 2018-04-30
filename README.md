@@ -9,11 +9,15 @@ VCF
 VCF, with “ANN” annotation to the “INFO” field, if more than one alternate alleles, each alternate allele is separated by a comma.
 
 ## Prerequisite
-SnpEff (version >= 4.3t), please download and unzip SnpEff into a folder and provide the path of snpEff.jar to the program, if SnpEff is already downloaded, please provide the path of snpEff.jar to the program. SnpEff can be downloaded here:
-http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip
-
-If first time running SnpEff, certain genome file will be downloaded automatically, which will take some time, after first time running, no more need of downloading genome file. 
-
+  1. SnpEff (version >= 4.3t), please download and unzip SnpEff into a folder and provide the path of snpEff.jar to the program, if SnpEff is already downloaded, please provide the path of snpEff.jar to the program. SnpEff can be downloaded here:
+``http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip`` 
+  2. If first time running SnpEff, certain genome file will be downloaded automatically, which will take some time, after first time running, no more need of downloading genome file. 
+  3. Python 3.6 or newer.
+  4. Python packages: 
+      1. pandas 0.22.0 or newer.
+      2. numpy 1.13.1 or newer. 
+      3. allel 1.1.10 or newer, install scikit-allel ``$ conda install -c conda-forge scikit-allel`` 
+    
 ## Annotations this tool will do
 This simple variant annotation tool is able to annotate variant with following information:
   1.	Type of variation (such as missense variant, synonymous variant, stop gained, stop loss, etc), complete list of type of variation can be seen in the file: ``ann_deleterious_order.txt``.
