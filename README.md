@@ -37,3 +37,6 @@ This simple variant annotation tool is able to annotate variant with following i
 
 ## For help
 ``$ python3 SimpleAnnotation.py -h``
+
+## Bug report
+Please reach out to me ``hliu312@gmail.com`` for bug report.
