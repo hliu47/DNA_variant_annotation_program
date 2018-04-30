@@ -9,7 +9,7 @@ VCF
 VCF, with “ANN” annotation to the “INFO” field, if more than one alternate alleles, each alternate allele is separated by a comma."ANN" field is according to Variant annotations in VCF format.``http://snpeff.sourceforge.net/VCFannotationformat_v1.0.pdf``
 
 ## Prerequisite
-  1. SnpEff (version >= 4.3t), please download and unzip SnpEff into a folder and provide the path of snpEff.jar to the program, if SnpEff is already downloaded, please provide the path of snpEff.jar to the program. SnpEff can be downloaded here.``http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip``
+  1. SnpEff (version >= 4.3t), download and unzip SnpEff into a folder and provide the path of snpEff.jar to the program, if SnpEff is already downloaded, provide the path of snpEff.jar to the program. SnpEff can be downloaded here.``http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip``
   2. If first time running SnpEff, certain genome file will be downloaded automatically, which will take some time, after first time running, no more need of downloading genome file. 
   3. Python 3.6 or newer.
   4. Python packages: 
