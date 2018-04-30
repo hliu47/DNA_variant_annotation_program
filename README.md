@@ -33,7 +33,8 @@ This simple variant annotation tool is able to annotate variant with following i
 ``$ python3 SimpleAnnotation.py -input ./Challenge_data.vcf -snpeff ./snpEff/snpEff.jar -genome GRCh37.75``
 
 ## Output file
-``simple_annotation.vcf``
+``simple_annotation.vcf`` 
+A sample output VCF file is provided in the folder ``sample_output_vcf``
 
 ## For help
 ``$ python3 SimpleAnnotation.py -h``
