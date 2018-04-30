@@ -279,12 +279,13 @@ def generate_var_id_for_exac(vcf_file):
 parser = argparse.ArgumentParser(description='Simple variant annotation tool ')
 parser.add_argument('-input', help='input the VCF file with variant information')
 parser.add_argument('-snpeff', help='path to snpEff.jar')
+parser.add_argument('-genome', help='Genome version used in the input VCF file')
 
 args = parser.parse_args()
 
 vcf_file = args.input                           # Input VCF file
 snpeff_path = args.snpeff                       # Path to the snpEff.jar of SnpEff
-ref_genome = 'GRCh37.75'                        # Reference genome, obtained from input VCF file.
+ref_genome = args.genome                        # Reference genome, obtained from input VCF file.
 anno_order_file = 'ann_deleterious_order.txt'   # File that contains orders of variant deleteriousness according to Sequancy Ontology.
 output_file = 'simple_annotation.vcf'           # Annotated VCF output from this program
 
