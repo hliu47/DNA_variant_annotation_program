@@ -318,7 +318,6 @@ callset_ratio = get_alt_ref_ratio(callset_dp_ro_ao)
 
 # Generate variant ID for search of ExAC.
 var_all = generate_var_id_for_exac(vcf_file)
-var_all = var_all.iloc[0:100]  # for test
 
 # Search variant allele frequency on ExAC.
 print('Searching ExAC for allele freq.....')
