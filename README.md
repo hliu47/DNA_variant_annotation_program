@@ -27,3 +27,6 @@ This simple variant annotation tool is able to annotate variant with following i
 
 ## Output file
 ``simple_annotation.vcf``
+
+## Help
+`` python3 SimpleAnnotation.py -h``
