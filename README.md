@@ -34,6 +34,7 @@ This simple variant annotation tool is able to annotate variant with following i
 
 ## Output file
 ``simple_annotation.vcf`` 
+
 A sample output VCF file is provided in the folder ``sample_output_vcf``
 
 ## For help
