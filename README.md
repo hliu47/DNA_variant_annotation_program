@@ -39,4 +39,7 @@ This simple variant annotation tool is able to annotate variant with following i
 ``$ python3 SimpleAnnotation.py -h``
 
 ## Bug report
-Please reach out to me ``hliu312@gmail.com`` for bug report.
+Please reach out to me ``hliu47@uic.edu`` for bug report.
+
+## License
+The MIT License
