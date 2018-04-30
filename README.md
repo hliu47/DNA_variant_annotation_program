@@ -6,7 +6,7 @@ Input: VCF
 
 Output: VCF, with “ANN” annotation to the “INFO” field, if more than one alternate alleles, each alternate allele is separated by a comma.
 
-Prerequisite: SnpEff, please download and unzip SnpEff into a folder and provide the path to snpEff.jar to the program, if SnpEff is already downloaded, please provide the path to the snpEff.jar to the program. SnpEff can be downloaded here:
+Prerequisite: SnpEff (version >= 4.3t), please download and unzip SnpEff into a folder and provide the path to snpEff.jar to the program, if SnpEff is already downloaded, please provide the path to the snpEff.jar to the program. SnpEff can be downloaded here:
 http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip
 
 If first time running SnpEff, certain genome file will be downloaded automatically, which will take some time, after first time running, no more need of downloading genome file. 
