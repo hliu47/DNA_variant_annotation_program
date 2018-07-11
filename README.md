@@ -1,4 +1,4 @@
-# Simple variant annotation program
+# DNA variant annotation program
 
 This is a prototype of variant annotation tool, written in Python.
 
