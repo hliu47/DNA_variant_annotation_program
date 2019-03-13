@@ -1,8 +1,8 @@
 #########################################################
-### Simple variant annotation tool
-### Version 0.0.1
+### DNA variant annotation tool
+### Version 1.0.0
 ### By Haipeng Liu 
-### hliu47@uic.edu
+### hliu312@gmail.com
 #########################################################
 
 
@@ -276,7 +276,7 @@ def generate_var_id_for_exac(vcf_file):
 
 
 # get input from command line
-parser = argparse.ArgumentParser(description='Simple variant annotation tool ')
+parser = argparse.ArgumentParser(description='DNA variant annotation tool ')
 parser.add_argument('-input', help='input the VCF file with variant information')
 parser.add_argument('-snpeff', help='path to snpEff.jar')
 parser.add_argument('-genome', help='Genome version used in the input VCF file')
@@ -287,7 +287,7 @@ vcf_file = args.input                           # Input VCF file
 snpeff_path = args.snpeff                       # Path to the snpEff.jar of SnpEff
 ref_genome = args.genome                        # Reference genome, obtained from input VCF file.
 anno_order_file = 'ann_deleterious_order.txt'   # File that contains orders of variant deleteriousness according to Sequancy Ontology.
-output_file = 'simple_annotation.vcf'           # Annotated VCF output from this program
+output_file = 'DNA_annotation.vcf'              # Annotated VCF output from this program
 
 
 # Run snpEff and save output
@@ -302,7 +302,6 @@ num_ann_max = get_max_num_ann(temp_out_name)
 
 # Get annotations generated from SnpEff
 anno_from_snpeff = get_ann_from_output_snpeff(temp_out_name)
-
 
 # Get number of alternate allels.
 num_alt = get_num_alternate(vcf_file)
@@ -355,7 +354,7 @@ with open(output_file, 'w') as f_out:
     f_out.writelines(header)
 output_vcf.to_csv(output_file, index=False, sep='\t', mode='a')
 
-print('All done, simple_annotation.vcf generated')
+print('DNA annotation completed, DNA_annotation.vcf generated')
 
 # Delete temporary files.
 subprocess.run(['rm', 'temp_out_vcf.temp'])
