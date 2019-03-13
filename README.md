@@ -1,6 +1,6 @@
 # DNA variant annotation program
 
-This is a prototype of variant annotation tool, written in Python.
+This is a DNA variant annotation tool, written in Python.
 
 ## Input format
 VCF
@@ -38,7 +38,7 @@ This DNA variant annotation tool is able to annotate variant with following info
 A sample output VCF file is provided in the folder ``sample_output_vcf``
 
 ## For help
-``$ python3 SimpleAnnotation.py -h``
+``$ python3 DNAannotation.py -h``
 
 ## Bug report
 Please reach out for bug report.
