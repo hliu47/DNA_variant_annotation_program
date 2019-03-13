@@ -41,7 +41,7 @@ A sample output VCF file is provided in the folder ``sample_output_vcf``
 ``$ python3 SimpleAnnotation.py -h``
 
 ## Bug report
-Please reach out to me ``hliu47@uic.edu`` for bug report.
+Please reach out for bug report.
 
 ## License
 The MIT License.
