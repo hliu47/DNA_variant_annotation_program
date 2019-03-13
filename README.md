@@ -18,7 +18,7 @@ VCF, with “ANN” annotation to the “INFO” field, if more than one alterna
       3. allel 1.1.10 or newer, install scikit-allel ``$ conda install -c conda-forge scikit-allel`` 
     
 ## Annotations this tool will do
-This simple variant annotation tool is able to annotate variant with following information:
+This DNA variant annotation tool is able to annotate variant with following information:
   1.	Type of variation (such as missense variant, synonymous variant, stop gained, stop loss, etc), complete list of type of variation can be seen in the file: ``ann_deleterious_order.txt``, these variation types are according to Sequence Ontology.``http://www.sequenceontology.org/``
   2.	Depth of sequence coverage at the site of variation.
   3.	Number of reads supporting the variant.
@@ -27,13 +27,13 @@ This simple variant annotation tool is able to annotate variant with following i
   6.	Most deleterious variant consequence from ExAC.
 
 ## Download
-``$ git clone https://github.com/hliu47/Simple_variant_annotation_program.git``
+``$ git clone https://github.com/hliu47/DNA_variant_annotation_program.git``
 
 ## Sample usage
-``$ python3 SimpleAnnotation.py -input ./Challenge_data.vcf -snpeff ./snpEff/snpEff.jar -genome GRCh37.75``
+``$ python3 DNAannotation.py -input ./Sample_data.vcf -snpeff ./snpEff/snpEff.jar -genome GRCh37.75``
 
 ## Output file
-``simple_annotation.vcf`` 
+``DNA_annotation.vcf`` 
 
 A sample output VCF file is provided in the folder ``sample_output_vcf``
 
