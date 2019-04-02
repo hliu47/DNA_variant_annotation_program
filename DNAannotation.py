@@ -290,9 +290,9 @@ anno_order_file = 'ann_deleterious_order.txt'   # File that contains orders of v
 output_file = 'DNA_annotation.vcf'              # Annotated VCF output from this program
 
 # Remove any previous .temp 
-if os.path.isfile("temp_out_vcf.temp")
+if os.path.isfile("temp_out_vcf.temp"):
     subprocess.run(['rm', 'temp_out_vcf.temp'])
-if os.path.isfile("pickle_dump.temp")
+if os.path.isfile("pickle_dump.temp"):
     subprocess.run(['rm', 'pickle_dump.temp'])
 
 # Run snpEff and save output
